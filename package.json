@@ -1,0 +1,30 @@
+{
+    "name": "polymer-1-snippets",
+    "displayName": "Polymer 1 Snippets",
+    "description": "Snippets following a naming convention and documentation standards. ",
+    "icon": "logo.png",
+    "version": "0.0.1",
+    "publisher": "WayneGoosen",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/WayneGoosen/vscode-polymer1.git"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}

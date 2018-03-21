@@ -1,0 +1,361 @@
+{
+	"Property with documentation": {
+	 	"prefix": "p-basic",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for property}.", 
+            "*/",
+            "${2:_}${3:PropertyName}: {",
+      		"\ttype: ${4|Boolean,Date,Number,String,Array,Object|}",
+      		"}${5:,}"
+	 	],
+	 	"description": "Property with documentation."
+	 },
+
+	"Boolean property with documentation": {
+	 	"prefix": "p-boolean",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for property}.", 
+            "*/",
+            "${2:_}${3:PropertyName}: {",
+			"\ttype: Boolean,",
+			"\tvalue: false",
+      		"}${4:,}"
+	 	],
+	 	"description": "Boolean property with documentation."
+	 },
+
+ 	"Property with type documentation": {
+	 	"prefix": "p-basic-type",
+	 	"body": [
+	 		"/**",
+			"* ${1:Description for property}.", 
+			"*",
+			"* @type ${2|Boolean,Date,Number,String,Array,Object|}",
+            "*/",
+            "${3:_}${4:PropertyName}: {",
+      		"\ttype: $2",
+      		"}${5:,}"
+	 	],
+	 	"description": "Property with type documentation."
+	 },
+
+	"Object or Array Property with documentation": {
+	 	"prefix": "p-object-array",
+	 	"body": [
+			"/**",
+            "* ${1:Description for property}.", 
+            "*/",
+            "${2:_}${3:PropertyName}: {",
+			  "\ttype: ${4|Array,Object|},",
+			  "\tvalue: function(){",
+			  "\t\treturn ${5|{},[]|};",
+			  "\t}",
+      		"}${6:,}"
+	 	],
+	 	"description": "Object or Array Property with documentation."
+	 },
+
+	 "Computed Property with documentation": {
+	 	"prefix": "p-compute",
+	 	"body": [
+			"/**",
+            "* ${1:Description for property}.", 
+            "*/",
+            "${2:_}${3:PropertyName}: {",
+			  "\ttype: ${4|Boolean,Date,Number,String,Array,Object|},",
+			  "\tcomputed: '_compute${5:propertyName}'",
+      		"}${6:,}"
+	 	],
+	 	"description": "Computed Property with documentation."
+	 },
+
+	 "Observe Property with documentation": {
+	 	"prefix": "p-observe",
+	 	"body": [
+			"/**",
+            "* ${1:Description for property}.", 
+            "*/",
+            "${2:_}${3:PropertyName}: {",
+			  "\ttype: ${4|Boolean,Date,Number,String,Array,Object|},",
+			  "\tobserver: '_observe${5:propertyName}'",
+      		"}${6:,}"
+	 	],
+	 	"description": "Observe Property with documentation."
+	 },
+
+	"All Property with documentation": {
+	 	"prefix": "p-all",
+	 	"body": [
+			"/**",
+            "* ${1:Description for property}.", 
+            "*/",
+            "${2:_}${3:PropertyName}: {",
+				"\ttype: ${4|Boolean,Date,Number,String,Array,Object|},",
+     	 		"\tvalue: ${5:boolean|number|string|function},",
+      			"\treflectToAttribute: ${6|true,false|},",
+      			"\treadOnly: ${7|true,false|},",
+      			"\tnotify: ${8|true,false|},",
+      			"\tcomputed: '_computed${9:propertyName}',",
+      			"\tobserver: '_observe${10:propertyName}'",
+      		"}${11:,}"
+	 	],
+	 	"description": "All Property with documentation."
+	 },
+	
+	"Single line documentation for a property": {
+	 	"prefix": "d-p-single-line",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for property}.", 
+            "*/"
+	 	],
+	 	"description": "Single line documentation for a property."
+	 },
+
+	 "All documentation for a property": {
+	 	"prefix": "d-p-all",
+	 	"body": [
+	 		"/**",
+			"* ${1:Description for property}.", 
+			"*",
+			"* @attribute ${2:attributeName}", 
+			"* @type ${3|Boolean,Date,Number,String,Array,Object|}", 
+			"* @default ${4:DefaultValue}", 
+            "*/"
+	 	],
+	 	"description": "All documentation for a property."
+	 },
+	
+	 "Property documentation with annotated type": {
+	 	"prefix": "d-p-type",
+	 	"body": [
+	 		"/**",
+			"* ${1:Description for property}.", 
+			"*",
+			"* @type ${2|Boolean,Date,Number,String,Array,Object|}",
+            "*/"
+	 	],
+	 	"description": "Property documentation with annotated type."
+	 },
+
+	 "Property documentation with annotated complex type": {
+	 	"prefix": "d-p-complex-type",
+	 	"body": [
+	 		"/**",
+			"* ${1:Description for property}.", 
+			"*",
+			"* @type {{${2:propertyName}: ${3|Boolean,Date,Number,String,Array,Object|}}}",
+            "*/"
+	 	],
+	 	"description": "Property documentation with annotated complex type."
+	 },
+
+
+  	"Single parameter function with documentation": {
+	 	"prefix": "m-1-param",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for your method}.", 
+            "*",
+            "* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
+            "* @return {${5|Boolean,Date,Number,String,Array,Object,Void|}} ${6:returnDescription}.",
+			"*/",
+			"${7|_,_listen,_compute,_observe,_handle|}${8:functionName}: function($3){",
+			"\t$10",	
+			"}${11:,}"
+	 	],
+	 	"description": "Single parameter function with documentation"
+	},
+
+	"Two parameter function with documentation": {
+	 	"prefix": "m-2-param",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for your method}.", 
+            "*",
+			"* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
+			"* @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
+            "* @return {${8|Boolean,Date,Number,String,Array,Object,Void|}} ${9:returnDescription}.",
+			"*/",
+			"${10|_,_listen,_compute,_observe,_handle|}${11:functionName}: function($3, $6){",
+			"\t$12",	
+			"}${13:,}"
+	 	],
+	 	"description": "Two parameter function with documentation"
+	},
+
+	"Three parameter function with documentation": {
+	 	"prefix": "m-3-param",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for your method}.", 
+            "*",
+			"* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
+			"* @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
+			"* @param {${8|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${9:parameterName} ${10:parameterDescritpion}.",
+            "* @return {${11|Boolean,Date,Number,String,Array,Object,Void|}} ${12:returnDescription}.",
+			"*/",
+			"${13|_,_listen,_compute,_observe,_handle|}${14:functionName}: function($3, $6, $9){",
+			"\t$15",	
+			"}${16:,}"
+	 	],
+	 	"description": "Three parameter function with documentation"
+	},
+
+	"Void function with documentation": {
+	 	"prefix": "m-void",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for your method}.", 
+            "*",
+            "* @return {Void} No Response.",
+			"*/",
+			"${2:_}${3:functionName}: function(){",
+			"\t$4",	
+			"}${5:,}"
+	 	],
+	 	"description": "Void function with documentation"
+	},
+
+	"Observer for property function with documentation": {
+		"prefix": "m-observe-property",
+		"body": [
+			"/**",
+			"* ${1:Description for your method}.", 
+			"*",
+			"* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} newValue", 
+			"* @param {${4|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} oldValue",
+			"* @return {Void} No Response.",
+			"*/",
+			"_observe${8:propertyName}: function(newValue, oldValue){",
+			"\t$9",	
+			"}${10:,}"
+		],
+		"description": "Observer for property function with documentation"
+	},
+
+	"Handle event function with documentation": {
+		"prefix": "m-handle-event",
+		"body": [
+			"/**",
+			"* ${1:Description for your method}.", 
+			"*",
+			"* @param {ComplexEvent} e ${2:eventDescription}.", 
+			"* @return {Void} No Response.",
+			"*/",
+			"_handle${8:eventName}: function(e){",
+			"\t$9",	
+			"}${10:,}"
+		],
+		"description": "Handle event function with documentation"
+	},
+
+	"Documentation for single parameter function": {
+		"prefix": "d-m-1-param",
+		"body": [
+			"/**",
+			"* ${1:Description for your method}.", 
+			"*",
+			"* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
+			"* @return {${5|Boolean,Date,Number,String,Array,Object,Void|}} ${6:returnDescription}.",
+			"*/"
+		],
+		"description": "Documentation for single parameter function"
+	},
+
+	"Documentation for two parameter function": {
+	 	"prefix": "d-m-2-param",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for your method}.", 
+            "*",
+			"* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
+			"* @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
+            "* @return {${8|Boolean,Date,Number,String,Array,Object,Void|}} ${9:returnDescription}.",
+			"*/"
+	 	],
+	 	"description": "Documentation for two parameter function"
+	},
+
+	"Documentation for three parameter function": {
+	 	"prefix": "d-m-3-param",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for your method}.", 
+            "*",
+			"* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
+			"* @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
+			"* @param {${8|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${9:parameterName} ${10:parameterDescritpion}.",
+            "* @return {${11|Boolean,Date,Number,String,Array,Object,Void|}} ${12:returnDescription}.",
+			"*/"
+	 	],
+	 	"description": "Documentation for three parameter function"
+	},
+
+	"Documentation for Void function": {
+	 	"prefix": "d-m-void",
+	 	"body": [
+	 		"/**",
+            "* ${1:Description for your method}.", 
+            "*",
+            "* @return {Void} No Response.",
+			"*/"
+	 	],
+	 	"description": "Documentation for Void function"
+	},
+
+	"Documentation for observer function": {
+		"prefix": "d-m-observer",
+		"body": [
+			"/**",
+			"* ${1:Description for your method}.", 
+			"*",
+			"* @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} newValue", 
+			"* @param {${4|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} oldValue",
+			"* @return {Void} No Response.",
+			"*/"
+		],
+		"description": "Documentation for observer function"
+	},
+
+	"Documentation for event handler function": {
+		"prefix": "d-m-handle-event",
+		"body": [
+			"/**",
+			"* ${1:Description for your method}.", 
+			"*",
+			"* @param {ComplexEvent} e ${2:eventDescription}", 
+			"* @return {Void} No Response.",
+			"*/"
+		],
+		"description": "Documentation for event handler function"
+	},
+
+	"Documentation for an event": {
+		"prefix": "d-event",
+		"body": [
+			"/**",
+			"* Fired when ${1:Description for your event}.", 
+			"*",
+			"* @event ${2:eventName}", 
+			"* @param {${3|Boolean,Date,Number,String,Array,Object|}} ${4:parameterName} ${5:description}.",
+			"*/"
+		],
+		"description": "Documentation for an event"
+	},
+
+	"Documentation for an event with complex object": {
+		"prefix": "d-event-complex",
+		"body": [
+			"/**",
+			"* Fired when ${1:Description for your event}.", 
+			"*",
+			"* @event ${2:eventName}", 
+			"* @param {{${3:propertyName}: ${4|Boolean,Date,Number,String,Array,Object|}}} ${5:parameterName} ${6:description}.",
+			"*/"
+		],
+		"description": "Documentation for an event with complex object"
+	}
+}

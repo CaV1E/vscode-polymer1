@@ -19,11 +19,11 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/javascript.json"
+                "path": "./snippets/snippets.json"
             },
             {
                 "language": "html",
-                "path": "./snippets/html.json"
+                "path": "./snippets/snippets.json"
             }
         ]
     }

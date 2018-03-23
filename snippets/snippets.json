@@ -143,7 +143,7 @@
 	 	"prefix": "f-1-param",
 	 	"body": [
 	 		"/**",
-            " * ${1:Description for your method}.", 
+            " * ${1:Description for your function}.", 
             " *",
             " * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
             " * @return {${5|Boolean,Date,Number,String,Array,Object,Void|}} ${6:returnDescription}.",
@@ -159,7 +159,7 @@
 	 	"prefix": "f-2-param",
 	 	"body": [
 	 		"/**",
-            " * ${1:Description for your method}.", 
+            " * ${1:Description for your function}.", 
             " *",
 			" * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
 			" * @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
@@ -176,7 +176,7 @@
 	 	"prefix": "f-3-param",
 	 	"body": [
 	 		"/**",
-            " * ${1:Description for your method}.", 
+            " * ${1:Description for your function}.", 
             " *",
 			" * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
 			" * @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
@@ -194,7 +194,7 @@
 	 	"prefix": "f-void",
 	 	"body": [
 	 		"/**",
-            " * ${1:Description for your method}.", 
+            " * ${1:Description for your function}.", 
             " *",
             " * @return {Void} No Response.",
 			" */",
@@ -209,7 +209,7 @@
 		"prefix": "f-observe-property",
 		"body": [
 			"/**",
-			" * ${1:Description for your method}.", 
+			" * ${1:Description for your function}.", 
 			" *",
 			" * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} newValue", 
 			" * @param {${4|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} oldValue",
@@ -226,7 +226,7 @@
 		"prefix": "f-handle-event",
 		"body": [
 			"/**",
-			" * ${1:Description for your method}.", 
+			" * ${1:Description for your function}.", 
 			" *",
 			" * @param {ComplexEvent} e ${2:eventDescription}.", 
 			" * @return {Void} No Response.",
@@ -242,7 +242,7 @@
 		"prefix": "d-f-1-param",
 		"body": [
 			"/**",
-			" * ${1:Description for your method}.", 
+			" * ${1:Description for your function}.", 
 			" *",
 			" * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
 			" * @return {${5|Boolean,Date,Number,String,Array,Object,Void|}} ${6:returnDescription}.",
@@ -255,7 +255,7 @@
 	 	"prefix": "d-f-2-param",
 	 	"body": [
 	 		"/**",
-            " * ${1:Description for your method}.", 
+            " * ${1:Description for your function}.", 
             " *",
 			" * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
 			" * @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
@@ -269,7 +269,7 @@
 	 	"prefix": "d-f-3-param",
 	 	"body": [
 	 		"/**",
-            " * ${1:Description for your method}.", 
+            " * ${1:Description for your function}.", 
             " *",
 			" * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
 			" * @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
@@ -284,7 +284,7 @@
 	 	"prefix": "d-f-void",
 	 	"body": [
 	 		"/**",
-            " * ${1:Description for your method}.", 
+            " * ${1:Description for your function}.", 
             " *",
             " * @return {Void} No Response.",
 			" */"
@@ -296,7 +296,7 @@
 		"prefix": "d-f-observer",
 		"body": [
 			"/**",
-			" * ${1:Description for your method}.", 
+			" * ${1:Description for your function}.", 
 			" *",
 			" * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} newValue", 
 			" * @param {${4|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} oldValue",
@@ -310,7 +310,7 @@
 		"prefix": "d-f-handle-event",
 		"body": [
 			"/**",
-			" * ${1:Description for your method}.", 
+			" * ${1:Description for your function}.", 
 			" *",
 			" * @param {ComplexEvent} e ${2:eventDescription}", 
 			" * @return {Void} No Response.",

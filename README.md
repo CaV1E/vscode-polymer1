@@ -6,15 +6,15 @@ The snippets are focused on conforming to [Polymer Documentation Guidelines](htt
 
 ## Naming Convention
 
-Private properties and methods should be prefixed with an underscore (_);
+Private properties and functions should be prefixed with an underscore (_);
 
-Any method that handles an event should be prefixed with '_handle'.
+Any function that handles an event should be prefixed with '_handle'.
 
-Any method assigned as a listener in the listeners object should be prefixed with '_listen'.
+Any function assigned as a listener in the listeners object should be prefixed with '_listen'.
 
-Any method assigned as an observer on a property or declared in the observers array should be prefixed with '_observe'.
+Any function assigned as an observer on a property or declared in the observers array should be prefixed with '_observe'.
 
-Any compute method should be prefixed with '_compute'.
+Any compute function should be prefixed with '_compute'.
 
 The naming convention aims to make the code base more readable and allow coders to be more aware of what their changes could affect.
 
@@ -26,11 +26,8 @@ Array or Object property snippet with a function for the defaulted value. It is 
 
 ## Features
 
-Below describes all available snippets.
+Below describes all available snippets (p:property, f:function, d:document).
 
-p -> property.
-f -> function.
-d -> documentation.
 
 ### Property Snippets
 

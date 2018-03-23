@@ -28,8 +28,9 @@ Array or Object property snippet with a function for the defaulted value. It is 
 
 Below describes all available snippets.
 
-Prefixes
-
+p -> property.
+f -> function.
+d -> documentation.
 
 ### Property Snippets
 
@@ -52,26 +53,26 @@ d-p-complex-type    // Property documentation with annotated complex type.
 d-p-all             // Full property documentation.
 ```
 
-### Method Snippets
+### Function Snippets
 
 ```javascript
-m-1-param           // Method with 1 paramter with documentation.
-m-2-param           // Method with 2 paramter with documentation.
-m-3-param           // Method with 2 paramter with documentation.
-m-void              // Void method with documentation.
-m-observe-property  // Method for observer of a property with documentation.
-m-handle-event      // Method to handle an event with documentation.
+f-1-param           // 1 parameter function with documentation.
+f-2-param           // 2 parameter function with documentation.
+f-3-param           // 3 parameter function with documentation.
+f-void              // Void Function with documentation.
+f-observe-property  // Function for observer of a property with documentation.
+f-handle-event      // Function to handle an event with documentation.
 ```
 
-### Method Documentation Snippets
+### Function Documentation Snippets
 
 ```javascript
-d-m-1-param         // Documentation for method with 1 parameter.
-d-m-2-param         // Documentation for method with 2 parameter.
-d-m-3-param         // Documentation for method with 3 parameter.
-d-m-void            // Documentation for void method.
-d-m-observer        // Documentation for property observer method.
-d-m-handle-event    // Documentation for method that handles an event.
+d-f-1-param         // Documentation for function with 1 parameter.
+d-f-2-param         // Documentation for function with 2 parameter.
+d-f-3-param         // Documentation for function with 3 parameter.
+d-f-void            // Documentation for void function.
+d-f-observer        // Documentation for property observer function.
+d-f-handle-event    // Documentation for function that handles an event.
 ```
 
 ### Event Documentation Snippets

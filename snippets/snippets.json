@@ -140,7 +140,7 @@
 
 
   	"Single parameter function with documentation": {
-	 	"prefix": "m-1-param",
+	 	"prefix": "f-1-param",
 	 	"body": [
 	 		"/**",
             " * ${1:Description for your method}.", 
@@ -156,7 +156,7 @@
 	},
 
 	"Two parameter function with documentation": {
-	 	"prefix": "m-2-param",
+	 	"prefix": "f-2-param",
 	 	"body": [
 	 		"/**",
             " * ${1:Description for your method}.", 
@@ -173,7 +173,7 @@
 	},
 
 	"Three parameter function with documentation": {
-	 	"prefix": "m-3-param",
+	 	"prefix": "f-3-param",
 	 	"body": [
 	 		"/**",
             " * ${1:Description for your method}.", 
@@ -191,7 +191,7 @@
 	},
 
 	"Void function with documentation": {
-	 	"prefix": "m-void",
+	 	"prefix": "f-void",
 	 	"body": [
 	 		"/**",
             " * ${1:Description for your method}.", 
@@ -206,7 +206,7 @@
 	},
 
 	"Observer for property function with documentation": {
-		"prefix": "m-observe-property",
+		"prefix": "f-observe-property",
 		"body": [
 			"/**",
 			" * ${1:Description for your method}.", 
@@ -223,7 +223,7 @@
 	},
 
 	"Handle event function with documentation": {
-		"prefix": "m-handle-event",
+		"prefix": "f-handle-event",
 		"body": [
 			"/**",
 			" * ${1:Description for your method}.", 
@@ -239,7 +239,7 @@
 	},
 
 	"Documentation for single parameter function": {
-		"prefix": "d-m-1-param",
+		"prefix": "d-f-1-param",
 		"body": [
 			"/**",
 			" * ${1:Description for your method}.", 
@@ -252,7 +252,7 @@
 	},
 
 	"Documentation for two parameter function": {
-	 	"prefix": "d-m-2-param",
+	 	"prefix": "d-f-2-param",
 	 	"body": [
 	 		"/**",
             " * ${1:Description for your method}.", 
@@ -266,7 +266,7 @@
 	},
 
 	"Documentation for three parameter function": {
-	 	"prefix": "d-m-3-param",
+	 	"prefix": "d-f-3-param",
 	 	"body": [
 	 		"/**",
             " * ${1:Description for your method}.", 
@@ -281,7 +281,7 @@
 	},
 
 	"Documentation for Void function": {
-	 	"prefix": "d-m-void",
+	 	"prefix": "d-f-void",
 	 	"body": [
 	 		"/**",
             " * ${1:Description for your method}.", 
@@ -293,7 +293,7 @@
 	},
 
 	"Documentation for observer function": {
-		"prefix": "d-m-observer",
+		"prefix": "d-f-observer",
 		"body": [
 			"/**",
 			" * ${1:Description for your method}.", 
@@ -307,7 +307,7 @@
 	},
 
 	"Documentation for event handler function": {
-		"prefix": "d-m-handle-event",
+		"prefix": "d-f-handle-event",
 		"body": [
 			"/**",
 			" * ${1:Description for your method}.", 

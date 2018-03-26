@@ -1,7 +1,7 @@
 {
     "name": "polymer-1-snippets",
     "displayName": "Polymer 1 Snippets",
-    "description": "Snippets following a naming convention and documentation standards. ",
+    "description": "Polymer 1 snippets to help build readable and documented elements with ease.",
     "icon": "logo.png",
     "version": "0.0.1",
     "publisher": "WayneGoosen",
@@ -10,6 +10,13 @@
     },
     "categories": [
         "Snippets"
+    ],
+    "keywords" : [
+        "Polymer",
+        "Polymer 1",
+        "Web Components",
+        "JavaScript",
+        "HTML"
     ],
     "repository": {
         "type": "git",

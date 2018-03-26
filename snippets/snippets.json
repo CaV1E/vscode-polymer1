@@ -1,5 +1,5 @@
 {
-	"Property with documentation": {
+	"Basic_Property": {
 	 	"prefix": "p-basic",
 	 	"body": [
 	 		"/** ${1:Description for property}. */",
@@ -10,7 +10,7 @@
 	 	"description": "Property with documentation."
 	 },
 
-	"Boolean property with documentation": {
+	"Boolean_Property": {
 	 	"prefix": "p-boolean",
 	 	"body": [
 			"/** ${1:Description for property}. */",
@@ -22,7 +22,7 @@
 	 	"description": "Boolean property with documentation."
 	 },
 
- 	"Property with type documentation": {
+ 	"Property_With_Type_Docs": {
 	 	"prefix": "p-basic-type",
 	 	"body": [
 	 		"/**",
@@ -37,7 +37,7 @@
 	 	"description": "Property with type documentation."
 	 },
 
-	"Object or Array Property with documentation": {
+	"Object_Or_Array_Property": {
 	 	"prefix": "p-object-array",
 	 	"body": [
 			"/** ${1:Description for property}. */",
@@ -51,7 +51,7 @@
 	 	"description": "Object or Array Property with documentation."
 	 },
 
-	 "Computed Property with documentation": {
+	 "Computed_Property": {
 	 	"prefix": "p-compute",
 	 	"body": [
 			"/** ${1:Description for property}. */",
@@ -60,10 +60,10 @@
 			  "\tcomputed: '_compute${5:propertyName}'",
       		"}${6:,}"
 	 	],
-	 	"description": "Computed Property with documentation."
+	 	"description": "Property with computed assigned and documentation."
 	 },
 
-	 "Observe Property with documentation": {
+	 "Observe_Property": {
 	 	"prefix": "p-observe",
 	 	"body": [
 			"/** ${1:Description for property}. */",
@@ -72,10 +72,10 @@
 			  "\tobserver: '_observe${5:propertyName}'",
       		"}${6:,}"
 	 	],
-	 	"description": "Observe Property with documentation."
+	 	"description": "Property with observer assigned and documentation."
 	 },
 
-	"All Property with documentation": {
+	"Property_With_All_Assignments": {
 	 	"prefix": "p-all",
 	 	"body": [
 			"/** ${1:Description for property}. */",
@@ -89,10 +89,10 @@
       			"\tobserver: '_observe${10:propertyName}'",
       		"}${11:,}"
 	 	],
-	 	"description": "All Property with documentation."
+	 	"description": "Property with all assignments and documentation."
 	 },
 	
-	"Single line documentation for a property": {
+	"Single_Line_Property_Docs": {
 	 	"prefix": "d-p-single-line",
 	 	"body": [
 			"/** ${1:Description for property}. */"
@@ -100,7 +100,7 @@
 	 	"description": "Single line documentation for a property."
 	 },
 
-	 "All documentation for a property": {
+	 "Full_Docs_For_Property": {
 	 	"prefix": "d-p-all",
 	 	"body": [
 	 		"/**",
@@ -111,10 +111,10 @@
 			" * @default ${4:DefaultValue}", 
             " */"
 	 	],
-	 	"description": "All documentation for a property."
+	 	"description": "Full documentation for a property."
 	 },
 	
-	 "Property documentation with annotated type": {
+	 "Property_Docs_With_Type": {
 	 	"prefix": "d-p-type",
 	 	"body": [
 	 		"/**",
@@ -126,7 +126,7 @@
 	 	"description": "Property documentation with annotated type."
 	 },
 
-	 "Property documentation with annotated complex type": {
+	 "Property_Docs_With_Complex_Type": {
 	 	"prefix": "d-p-complex-type",
 	 	"body": [
 	 		"/**",
@@ -138,8 +138,7 @@
 	 	"description": "Property documentation with annotated complex type."
 	 },
 
-
-  	"Single parameter function with documentation": {
+  	"Single_Param_Func_With_Docs": {
 	 	"prefix": "f-1-param",
 	 	"body": [
 	 		"/**",
@@ -155,7 +154,7 @@
 	 	"description": "Single parameter function with documentation"
 	},
 
-	"Two parameter function with documentation": {
+	"Two_Param_Func_With_Docs": {
 	 	"prefix": "f-2-param",
 	 	"body": [
 	 		"/**",
@@ -172,7 +171,7 @@
 	 	"description": "Two parameter function with documentation"
 	},
 
-	"Three parameter function with documentation": {
+	"Three_Param_Func_With_Docs": {
 	 	"prefix": "f-3-param",
 	 	"body": [
 	 		"/**",
@@ -190,7 +189,7 @@
 	 	"description": "Three parameter function with documentation"
 	},
 
-	"Void function with documentation": {
+	"Void_Func_With_Docs": {
 	 	"prefix": "f-void",
 	 	"body": [
 	 		"/**",
@@ -205,7 +204,7 @@
 	 	"description": "Void function with documentation"
 	},
 
-	"Observer for property function with documentation": {
+	"Observer_Func_With_Docs": {
 		"prefix": "f-observe-property",
 		"body": [
 			"/**",
@@ -219,10 +218,10 @@
 			"\t$9",	
 			"}${10:,}"
 		],
-		"description": "Observer for property function with documentation"
+		"description": "Observer function for property with documentation"
 	},
 
-	"Handle event function with documentation": {
+	"Event_Handler_Func_With_Docs": {
 		"prefix": "f-handle-event",
 		"body": [
 			"/**",
@@ -235,10 +234,10 @@
 			"\t$9",	
 			"}${10:,}"
 		],
-		"description": "Handle event function with documentation"
+		"description": "Event handler function with documentation"
 	},
 
-	"Documentation for single parameter function": {
+	"Single_Param_Func_Docs": {
 		"prefix": "d-f-1-param",
 		"body": [
 			"/**",
@@ -251,7 +250,7 @@
 		"description": "Documentation for single parameter function"
 	},
 
-	"Documentation for two parameter function": {
+	"Two_Param_Func_Docs": {
 	 	"prefix": "d-f-2-param",
 	 	"body": [
 	 		"/**",
@@ -265,7 +264,7 @@
 	 	"description": "Documentation for two parameter function"
 	},
 
-	"Documentation for three parameter function": {
+	"Three_Param_Func_Docs": {
 	 	"prefix": "d-f-3-param",
 	 	"body": [
 	 		"/**",
@@ -280,7 +279,7 @@
 	 	"description": "Documentation for three parameter function"
 	},
 
-	"Documentation for Void function": {
+	"Void_Func_Docs": {
 	 	"prefix": "d-f-void",
 	 	"body": [
 	 		"/**",
@@ -289,10 +288,10 @@
             " * @return {Void} No Response.",
 			" */"
 	 	],
-	 	"description": "Documentation for Void function"
+	 	"description": "Documentation for void function"
 	},
 
-	"Documentation for observer function": {
+	"Observer_Func_Docs": {
 		"prefix": "d-f-observer",
 		"body": [
 			"/**",
@@ -306,7 +305,7 @@
 		"description": "Documentation for observer function"
 	},
 
-	"Documentation for event handler function": {
+	"Event_Handler_Func_Docs": {
 		"prefix": "d-f-handle-event",
 		"body": [
 			"/**",
@@ -319,7 +318,7 @@
 		"description": "Documentation for event handler function"
 	},
 
-	"Documentation for an event": {
+	"Event_Docs": {
 		"prefix": "d-event",
 		"body": [
 			"/**",
@@ -332,7 +331,7 @@
 		"description": "Documentation for an event"
 	},
 
-	"Documentation for an event with complex object": {
+	"Event_Docs_With_Complex_Object": {
 		"prefix": "d-event-complex",
 		"body": [
 			"/**",
@@ -345,7 +344,7 @@
 		"description": "Documentation for an event with complex object"
 	},
 
-	"Basic behavior": {
+	"Basic_Behavior": {
 		"prefix": "b-basic",
 		"body": [
 			"<link rel=\"import\" href=\"../${1:../}bower_components/polymer/polymer.html\" />",
@@ -367,7 +366,7 @@
 		"description": "Basic behavior"
 	},
 
-	"Extend a behavior": {
+	"Behavior_Extension": {
 		"prefix": "b-extend",
 		"body": [
 			"<link rel=\"import\" href=\"../${1:../}bower_components/polymer/polymer.html\" />",
@@ -388,10 +387,10 @@
 			"",
 			"</script>"
 		],
-		"description": "Extend a behavior"
+		"description": "Behavior that extends another behavior"
 	},
 
-	"Documentation for a basic behavior": {
+	"Basic_Behavior_Docs": {
 		"prefix": "d-b-basic",
 		"body": [
 			"/**",
@@ -400,10 +399,10 @@
  			" * @polymerBehavior",
  			" */"
 		],
-		"description": "Documentation for a basic behavior"
+		"description": "Documentation for a behavior"
 	},
 
-	"Documentation for an extended behavior": {
+	"Behavior_Extension_Docs": {
 		"prefix": "d-b-extend",
 		"body": [
 			"/**",
@@ -415,7 +414,7 @@
 		"description": "Documentation for an extended behavior"
 	},
 
-	"Basic element": {
+	"Basic_Element": {
 		"prefix": "el-basic",
 		"description": "Basic element",
 		"body": [
@@ -459,7 +458,7 @@
 		]
 	  },
 
-	  "Element with all assignments": {
+	"Element_With_All_Assignments": {
 		"prefix": "el-all",
 		"description": "Element with all assignments",
 		"body": [
@@ -511,7 +510,7 @@
 		]
 	  },
 
-	  "Basic element documentation": {
+	"Basic_Element_Docs": {
 		"prefix": "d-el-basic",
 		"description": "Basic element documentation",
 		"body": [
@@ -529,5 +528,24 @@
 		  "@demo ${4:demo/index.html}",
 		  "@hero ${5:hero.svg}",
 		  "-->"]
-		}
+		},
+
+	"Custom_CSS_Docs": {
+		"prefix": "d-custom-css",
+		"description": "Custom CSS Documentation",
+		"body": [
+			"### Styling",
+			"",
+			"`<${1:element-name}>` provides the following custom properties and mixins",
+			"for styling:",
+			"",
+			"Custom property      | Description      | Default",
+			"---------------------|------------------|---------------",
+			"`${2:CustomProperty}`| ${3:Description} | ${4:Default}",
+			"$0"
+		]
+	}
 }
+
+
+ 

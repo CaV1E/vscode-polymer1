@@ -24,10 +24,13 @@ Boolean property snippet with value defaulted to false. If defaulted to true, yo
 
 Array or Object property snippet with a function for the defaulted value. It is to ensure each element gets its own copy of the value.
 
+# Usage
+
+Type the prefix of the snippet (i.e. `p-basic`), press `enter` and the snippet unfolds. Tab through one or more place holders, enter a value or use the default provided.
+
 ## Features
 
-Below describes all available snippets (p:property, f:function, d:document).
-
+Below describes all available snippets (p:property, f:function, d:documentation, el:element, b:behavior).
 
 ### Property Snippets
 
@@ -105,13 +108,28 @@ el-all     // Element with all available assignments and documentation.
 d-el-basic   // Documentation for a basic element.
 ```
 
+### Custom CSS Properties/Mixins Documentation Snippets
+
+```javascript
+d-custom-css   // Documentation table for any custom CSS properties and mixins.
+```
+
 ## Requirements
 
 Install Visual Studio Code 1.21.0 or higher.
 
+## Installation
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/) 1.21.0 or higher
+2. Launch Visual Studio Code
+3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+4. Select `Install Extension`
+5. Choose the extension - `Polymer 1 Snippets`
+6. Reload Visual Studio Code
+
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of Polymer 1 Snippets.
 

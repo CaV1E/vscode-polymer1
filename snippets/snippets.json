@@ -343,5 +343,191 @@
 			" */"
 		],
 		"description": "Documentation for an event with complex object"
-	}
+	},
+
+	"Basic behavior": {
+		"prefix": "b-basic",
+		"body": [
+			"<link rel=\"import\" href=\"../${1:../}bower_components/polymer/polymer.html\" />",
+			"",
+			"<script>",
+			"'use strict';",
+			"",
+			"\t/**",
+ 			"\t * ${2:Description for your behavior}.",
+ 			"\t *",
+ 			"\t * @polymerBehavior",
+ 			"\t */",
+			"\t${3:MyBehaviors}.${4:BehaviorName} = {",
+			"$0",
+			"\t};",
+			"",
+			"</script>"
+		],
+		"description": "Basic behavior"
+	},
+
+	"Extend a behavior": {
+		"prefix": "b-extend",
+		"body": [
+			"<link rel=\"import\" href=\"../${1:../}bower_components/polymer/polymer.html\" />",
+			"",
+			"<script>",
+			"'use strict';",
+			"",
+			"\t/**",
+ 			"\t * ${2:Description for your extended behavior}.",
+ 			"\t *",
+ 			"\t * @polymerBehavior ${3:SuperBehavior}",
+ 			"\t */",
+			"\t${4:MyBehaviors}.${5:SuperBehaviorImplementation}Impl = {",
+			"$0",
+			"\t};",
+			"",
+			"\t$4.$3 = [$4.${6:BaseBehavior}, $4.$5Impl]",
+			"",
+			"</script>"
+		],
+		"description": "Extend a behavior"
+	},
+
+	"Documentation for a basic behavior": {
+		"prefix": "d-b-basic",
+		"body": [
+			"/**",
+ 			" * ${2:Description for your behavior}.",
+ 			" *",
+ 			" * @polymerBehavior",
+ 			" */"
+		],
+		"description": "Documentation for a basic behavior"
+	},
+
+	"Documentation for an extended behavior": {
+		"prefix": "d-b-extend",
+		"body": [
+			"/**",
+ 			" * ${2:Description for your extended behavior}.",
+ 			" *",
+ 			" * @polymerBehavior ${3:SuperBehavior}",
+ 			" */"
+		],
+		"description": "Documentation for an extended behavior"
+	},
+
+	"Basic element": {
+		"prefix": "el-basic",
+		"description": "Basic element",
+		"body": [
+		  "<link rel=\"import\" href=\"../${1:../}bower_components/polymer/polymer.html\" />",
+		  "",
+		  "<!--",
+		  "`${2:element name}` ${3:Description}.",
+		  "",
+		  "### Example",
+		  "",
+		  "````",
+		  "<$2></$2>",
+		  "````",
+		  "",
+		  "@group ${4:Group}.",
+		  "@element $2",
+		  "@demo ${5:demo/index.html}",
+		  "@hero ${6:hero.svg}",
+		  "-->",
+		  "<dom-module id=\"$2\">",
+		  "\t<template>",
+		  "\t\t<style>",
+		  "\t\t\t:host {",
+		  "\t\t\t\tdisplay: block",
+		  "\t\t\t}",
+		  "\t\t</style>",
+		  "",
+		  "\t\t$0",
+		  "",
+		  "\t</template>",
+		  "",
+		  "\t<script>",
+		  "\t'use strict';",
+		  "",
+		  "\t\tPolymer({",
+          "\t\t\tis: \"$2\"",
+		  "",
+		  "\t\t});",
+		  "\t</script>",
+		  "</dom-module>"
+		]
+	  },
+
+	  "Element with all assignments": {
+		"prefix": "el-all",
+		"description": "Element with all assignments",
+		"body": [
+		  "<link rel=\"import\" href=\"../${1:../}bower_components/polymer/polymer.html\" />",
+		  "",
+		  "<!--",
+		  "`${2:element-name}` ${3:Description}.",
+		  "",
+		  "### Example",
+		  "",
+		  "````",
+		  "<$2></$2>",
+		  "````",
+		  "",
+		  "@group ${4:Group}.",
+		  "@element $2",
+		  "@demo ${5:demo/index.html}",
+		  "@hero ${6:hero.svg}",
+		  "-->",
+		  "<dom-module id=\"$2\">",
+		  "\t<template>",
+		  "\t\t<style>",
+		  "\t\t\t:host {",
+		  "\t\t\t\tdisplay: block",
+		  "\t\t\t}",
+		  "\t\t</style>",
+		  "",
+		  "\t\t$0",
+		  "",
+		  "\t</template>",
+		  "",
+		  "\t<script>",
+		  "\t'use strict';",
+		  "",
+		  "\t\tPolymer({",
+          "\t\t\tis: \"$2\",",
+		  "",
+		  "\t\t\tbehaviors: [$7],",
+		  "",
+		  "\t\t\tproperties: {$8},",
+		  "",
+		  "\t\t\tobservers: [$9],",
+		  "",
+		  "\t\t\tlisteners: {$10}",
+		  "",
+		  "\t\t});",
+		  "\t</script>",
+		  "</dom-module>"
+		]
+	  },
+
+	  "Basic element documentation": {
+		"prefix": "d-el-basic",
+		"description": "Basic element documentation",
+		"body": [
+		  "<!--",
+		  "`${1:element-name}` ${2:Description}.",
+		  "",
+		  "### Example",
+		  "",
+		  "````",
+		  "<$1></$1>",
+		  "````",
+		  "",
+		  "@group ${3:Group}.",
+		  "@element $1",
+		  "@demo ${4:demo/index.html}",
+		  "@hero ${5:hero.svg}",
+		  "-->"]
+		}
 }

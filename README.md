@@ -78,6 +78,32 @@ d-f-handle-event    // Documentation for function that handles an event.
 d-event             // Documentation for an event.
 d-event-complex     // Documentation for an event with an annotated complex type.
 ```
+### Behavior Snippets
+
+```javascript
+b-basic      // Basic behavior with documentation.
+b-extend     // Extend an existing behavior with documentation.
+```
+
+### Behavior Documentation Snippets
+
+```javascript
+d-b-basic      // Documentation for a behavior.
+d-b-extend     // Documentation for a behavior that extends another behavior.
+```
+
+### Element Snippets
+
+```javascript
+el-basic   // Basic element with documentation.
+el-all     // Element with all available assignments and documentation.
+```
+
+### Element Documentation Snippets
+
+```javascript
+d-el-basic   // Documentation for a basic element.
+```
 
 ## Requirements
 

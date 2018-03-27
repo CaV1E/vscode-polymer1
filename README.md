@@ -6,7 +6,7 @@ The snippets are focused on conforming to [Polymer Documentation Guidelines](htt
 
 ## Naming Convention
 
-Private properties and functions should be prefixed with an underscore (_);
+Private properties and functions should be prefixed with an underscore (_).
 
 Any function that handles an event should be prefixed with '_handle'.
 
@@ -24,7 +24,7 @@ Boolean property snippet with value defaulted to false. If defaulted to true, yo
 
 Array or Object property snippet with a function for the defaulted value. It is to ensure each element gets its own copy of the value.
 
-# Usage
+## Usage
 
 Type the prefix of the snippet (i.e. `p-basic`), press `enter` and the snippet unfolds. Tab through one or more place holders, enter a value or use the default provided.
 
@@ -127,11 +127,9 @@ Install Visual Studio Code 1.21.0 or higher.
 5. Choose the extension - `Polymer 1 Snippets`
 6. Reload Visual Studio Code
 
-## Release Notes
+## Change Log
 
-### 0.0.1
-
-Initial release of Polymer 1 Snippets.
+All notable changes will be documented in [CHANGELOG.md](https://github.com/WayneGoosen/vscode-polymer1/blob/master/CHANGELOG.md)
 
 ## Contributing
 

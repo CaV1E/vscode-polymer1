@@ -3,7 +3,7 @@
 	 	"prefix": "p-basic",
 	 	"body": [
 	 		"/** ${1:Description for property}. */",
-            "${2:_}${3:PropertyName}: {",
+            "${2:_}${3:propertyName}: {",
       		"\ttype: ${4|Boolean,Date,Number,String,Array,Object|}",
       		"}${5:,}"
 	 	],
@@ -14,7 +14,7 @@
 	 	"prefix": "p-boolean",
 	 	"body": [
 			"/** ${1:Description for property}. */",
-            "${2:_}${3:PropertyName}: {",
+            "${2:_}${3:propertyName}: {",
 			"\ttype: Boolean,",
 			"\tvalue: false",
       		"}${4:,}"
@@ -30,7 +30,7 @@
 			" *",
 			" * @type ${2|Boolean,Date,Number,String,Array,Object|}",
             " */",
-            "${3:_}${4:PropertyName}: {",
+            "${3:_}${4:propertyName}: {",
       		"\ttype: $2",
       		"}${5:,}"
 	 	],
@@ -41,9 +41,9 @@
 	 	"prefix": "p-object-array",
 	 	"body": [
 			"/** ${1:Description for property}. */",
-            "${2:_}${3:PropertyName}: {",
+            "${2:_}${3:propertyName}: {",
 			  "\ttype: ${4|Array,Object|},",
-			  "\tvalue: function(){",
+			  "\tvalue: function () {",
 			  "\t\treturn ${5|{},[]|};",
 			  "\t}",
       		"}${6:,}"
@@ -55,9 +55,9 @@
 	 	"prefix": "p-compute",
 	 	"body": [
 			"/** ${1:Description for property}. */",
-            "${2:_}${3:PropertyName}: {",
+            "${2:_}${3:propertyName}: {",
 			  "\ttype: ${4|Boolean,Date,Number,String,Array,Object|},",
-			  "\tcomputed: '_compute${5:propertyName}'",
+			  "\tcomputed: '_compute${5:PropertyName}'",
       		"}${6:,}"
 	 	],
 	 	"description": "Property with computed assigned and documentation."
@@ -67,9 +67,9 @@
 	 	"prefix": "p-observe",
 	 	"body": [
 			"/** ${1:Description for property}. */",
-            "${2:_}${3:PropertyName}: {",
+            "${2:_}${3:propertyName}: {",
 			  "\ttype: ${4|Boolean,Date,Number,String,Array,Object|},",
-			  "\tobserver: '_observe${5:propertyName}'",
+			  "\tobserver: '_observe${5:PropertyName}'",
       		"}${6:,}"
 	 	],
 	 	"description": "Property with observer assigned and documentation."
@@ -79,7 +79,7 @@
 	 	"prefix": "p-all",
 	 	"body": [
 			"/** ${1:Description for property}. */",
-            "${2:_}${3:PropertyName}: {",
+            "${2:_}${3:propertyName}: {",
 				"\ttype: ${4|Boolean,Date,Number,String,Array,Object|},",
      	 		"\tvalue: ${5:boolean|number|string|function},",
       			"\treflectToAttribute: ${6|true,false|},",
@@ -147,9 +147,9 @@
             " * @param {${2|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${3:parameterName} ${4:parameterDescritpion}.", 
             " * @return {${5|Boolean,Date,Number,String,Array,Object,Void|}} ${6:returnDescription}.",
 			" */",
-			"${7|_,_listen,_compute,_observe,_handle|}${8:functionName}: function($3){",
-			"\t$10",	
-			"}${11:,}"
+			"${7|_,_listen,_compute,_observe,_handle|}${8:functionName}: function ($3) {",
+			"\t$0",	
+			"}${10:,}"
 	 	],
 	 	"description": "Single parameter function with documentation"
 	},
@@ -164,9 +164,9 @@
 			" * @param {${5|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${6:parameterName} ${7:parameterDescritpion}.",
             " * @return {${8|Boolean,Date,Number,String,Array,Object,Void|}} ${9:returnDescription}.",
 			" */",
-			"${10|_,_listen,_compute,_observe,_handle|}${11:functionName}: function($3, $6){",
-			"\t$12",	
-			"}${13:,}"
+			"${10|_,_listen,_compute,_observe,_handle|}${11:functionName}: function ($3, $6) {",
+			"\t$0",	
+			"}${12:,}"
 	 	],
 	 	"description": "Two parameter function with documentation"
 	},
@@ -182,9 +182,9 @@
 			" * @param {${8|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} ${9:parameterName} ${10:parameterDescritpion}.",
             " * @return {${11|Boolean,Date,Number,String,Array,Object,Void|}} ${12:returnDescription}.",
 			" */",
-			"${13|_,_listen,_compute,_observe,_handle|}${14:functionName}: function($3, $6, $9){",
-			"\t$15",	
-			"}${16:,}"
+			"${13|_,_listen,_compute,_observe,_handle|}${14:functionName}: function ($3, $6, $9) {",
+			"\t$0",	
+			"}${15:,}"
 	 	],
 	 	"description": "Three parameter function with documentation"
 	},
@@ -197,9 +197,9 @@
             " *",
             " * @return {Void} No Response.",
 			" */",
-			"${2:_}${3:functionName}: function(){",
-			"\t$4",	
-			"}${5:,}"
+			"${2:_}${3:functionName}: function () {",
+			"\t$0",	
+			"}${4:,}"
 	 	],
 	 	"description": "Void function with documentation"
 	},
@@ -214,9 +214,9 @@
 			" * @param {${4|Boolean,Date,Number,String,Array,Object,ComplexEvent|}} oldValue",
 			" * @return {Void} No Response.",
 			" */",
-			"_observe${8:propertyName}: function(newValue, oldValue){",
-			"\t$9",	
-			"}${10:,}"
+			"_observe${8:propertyName}: function (newValue, oldValue) {",
+			"\t$0",	
+			"}${9:,}"
 		],
 		"description": "Observer function for property with documentation"
 	},
@@ -230,9 +230,9 @@
 			" * @param {ComplexEvent} e ${2:eventDescription}.", 
 			" * @return {Void} No Response.",
 			" */",
-			"_handle${8:eventName}: function(e){",
-			"\t$9",	
-			"}${10:,}"
+			"_handle${8:eventName}: function (e) {",
+			"\t$0",	
+			"}${9:,}"
 		],
 		"description": "Event handler function with documentation"
 	},

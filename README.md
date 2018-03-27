@@ -4,6 +4,8 @@ This extension for Visual Studio Code adds snippets for Polymer 1. The snippets 
 
 The snippets are focused on conforming to [Polymer Documentation Guidelines](https://www.polymer-project.org/1.0/docs/tools/documentation), various Polymer best practices and a naming convention to help readability.
 
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/WayneGoosen.polymer-1-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=WayneGoosen.polymer-1-snippets) [![Current Release](https://vsmarketplacebadge.apphb.com/version/WayneGoosen.polymer-1-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=WayneGoosen.polymer-1-snippets)
+
 ## Naming Convention
 
 Private properties and functions should be prefixed with an underscore (_).
